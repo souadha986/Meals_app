@@ -3,9 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:meals_app/core/styling/app_colors.dart';
 
 class Fields extends StatelessWidget {
-  TextEditingController? controller;
+  final TextEditingController? controller;
 
-  Fields({super.key, this.controller});
+  const Fields({super.key, this.controller});
 
   @override
   Widget build(BuildContext context) {
