@@ -18,6 +18,13 @@ class Fontstyle {
       fontWeight: FontWeight.w400,
     ),
   );
+  static TextStyle smallblackfontstylenumbers = GoogleFonts.inter(
+    textStyle: TextStyle(
+      fontSize: 14.sp,
+      color: AppColors.blackColor,
+      fontWeight: FontWeight.w400,
+    ),
+  );
   static TextStyle smallblacktitles = GoogleFonts.inter(
     textStyle: TextStyle(
       fontSize: 16.sp,
@@ -28,6 +35,13 @@ class Fontstyle {
   static TextStyle moresmallblacktitles = GoogleFonts.inter(
     textStyle: TextStyle(
       fontSize: 14.sp,
+      color: AppColors.blackColor,
+      fontWeight: FontWeight.w500,
+    ),
+  );
+  static TextStyle itemtitles = GoogleFonts.inter(
+    textStyle: TextStyle(
+      fontSize: 12.sp,
       color: AppColors.blackColor,
       fontWeight: FontWeight.w500,
     ),
