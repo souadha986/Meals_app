@@ -37,6 +37,11 @@ class DatabaseHelper {
     return await db.insert('meals', mealMap);
   }
 
+  Future dletemeal(Meal meal) async {
+    final db = await database;
+    return db.delete("meals", where: "id=?", whereArgs: [meal.id]);
+  }
+
   Future<List<Meal>> getMeals() async {
     final db = await database;
     List<Map<String, dynamic>> mealsJson = await db.query('meals');

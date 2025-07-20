@@ -12,6 +12,7 @@ class FoodItem extends StatelessWidget {
   final double rate;
   final String time;
   final Function()? onTap;
+  final Function()? onLongPress;
   const FoodItem({
     super.key,
     required this.imageUrl,
@@ -19,10 +20,12 @@ class FoodItem extends StatelessWidget {
     required this.rate,
     required this.time,
     required this.onTap,
+    required this.onLongPress,
   });
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onLongPress: onLongPress,
       onTap: onTap,
       child: Container(
         alignment: Alignment.center,
@@ -35,7 +38,7 @@ class FoodItem extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               // ignore: deprecated_member_use
-              color: AppColors.blackColor.withOpacity(0.04), // shadow color
+              color: AppColors.blackColor.withOpacity(0.04),
               blurRadius: 60,
               spreadRadius: 0,
               offset: Offset(6, 6),
@@ -58,7 +61,6 @@ class FoodItem extends StatelessWidget {
                 fit: BoxFit.fill,
               ),
             ),
-
             SizedBox(
               width: 137.w,
               child: Text(

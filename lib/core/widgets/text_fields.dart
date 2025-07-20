@@ -4,8 +4,9 @@ import 'package:meals_app/core/styling/app_colors.dart';
 
 class Fields extends StatelessWidget {
   final TextEditingController? controller;
+  final String? Function(String?)? validator;
 
-  const Fields({super.key, this.controller});
+  const Fields({super.key, this.controller, this.validator});
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +19,8 @@ class Fields extends StatelessWidget {
           ),
         ),
         child: TextFormField(
+          controller: controller,
+          validator: validator,
           cursorColor: AppColors.primaryColor,
           decoration: InputDecoration(
             contentPadding: EdgeInsets.symmetric(horizontal: 16.w),
