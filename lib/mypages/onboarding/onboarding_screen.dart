@@ -123,7 +123,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     dotsCount: 3,
                     position: currentindex.toDouble(),
                     decorator: DotsDecorator(
-                      activeColor: AppColors.whithColor,
+                      activeColor: AppColors.whiteColor,
                       color: Color(0xffC2C2C2),
                       size: const Size(24, 6),
                       activeSize: const Size(24, 6),
@@ -175,7 +175,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           width: 62.w,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: AppColors.whithColor,
+                            color: AppColors.whiteColor,
                           ),
                           child: IconButton(
                             onPressed: () {

@@ -7,14 +7,14 @@ class Fontstyle {
   static TextStyle bigwhithfontStyle = GoogleFonts.inter(
     textStyle: TextStyle(
       fontSize: 32.sp,
-      color: AppColors.whithColor,
+      color: AppColors.whiteColor,
       fontWeight: FontWeight.w600,
     ),
   );
   static TextStyle smallwhithfontstyle = GoogleFonts.inter(
     textStyle: TextStyle(
       fontSize: 14.sp,
-      color: AppColors.whithColor,
+      color: AppColors.whiteColor,
       fontWeight: FontWeight.w400,
     ),
   );

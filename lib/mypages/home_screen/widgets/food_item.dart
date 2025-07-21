@@ -33,7 +33,7 @@ class FoodItem extends StatelessWidget {
         width: 153.w,
         height: 176.h,
         decoration: BoxDecoration(
-          color: AppColors.whithColor,
+          color: AppColors.whiteColor,
           borderRadius: BorderRadius.circular(8.r),
           boxShadow: [
             BoxShadow(

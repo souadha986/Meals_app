@@ -68,7 +68,9 @@ class _HomeState extends State<Home> {
                       name: meal.name,
                       rate: meal.rate,
                       time: meal.time,
-                      onTap: () {},
+                      onTap: () {
+                        context.push(AppRoutes.mealsdetails, extra: meal);
+                      },
                       onLongPress: () {
                         showDialog(
                           context: context,
